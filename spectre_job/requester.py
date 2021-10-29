@@ -35,7 +35,7 @@ def manageWeatherApiQuery():
     now = datetime.now()
     if lastEntry:
         entryTime, _ = lastEntry
-        nextTime = entryTime + 3500
+        nextTime = entryTime + 3600
         print(nextTime)
         print('now', now.timestamp())
         if now.timestamp() < nextTime:
