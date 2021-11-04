@@ -31,9 +31,11 @@ docker container kill $(docker ps -q)
 The application can be found at http://localhost:8000/{path}
 path options include:
 
+/*:
 -'trigger'-> POST endpoint that triggers docker job that adds data to database from external API
 -'store' -> POST endpoint that accepts json body to add data to database
 -'load' -> GET endpoint can accept argument datetime with an int in unix time
 -'lastEntry' -> GET endpoint that returns last item in database
 -'deleteDatabase' -> GET endpoint thtat removes all items from database
 -'dbLength'  -> GET endpoint returns length of items in the database# spectreProject
+*/
