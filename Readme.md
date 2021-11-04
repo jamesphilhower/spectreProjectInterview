@@ -3,6 +3,11 @@ The majority of the code logic is in spectre/spectre_main/views.py
 The setup of the database is in spectre/spectre_main/models.py
 The tests are located in spectre/tests.py
 
+# Purpose:
+The purpose of this project is to get historic by the hour weather from OpenWeatherMap for Manhattan (up to 5 days)
+and then be able to update the records when a job is triggered. The project runs in a docker container, and 
+launches a second docker container to trigger the API GET requests from OpenWeatherMap. 
+
 ## To run inside of a container:
 ```
 cd spectre_job
